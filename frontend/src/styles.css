@@ -1,0 +1,159 @@
+body{ font-family: Arial, Helvetica, sans-serif; background:#fafafa; margin:0; color:#111; overflow-y: scroll; }
+.container{ width: 100%;  background-image: url('../public/images/fondo2.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.top{ background:linear-gradient(90deg,#ff6fb5,#ff9a8a); color:#fff; padding:14px; border-radius:8px; }
+.days-grid{ display:grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap:12px; margin-top:16px; }
+.day-card{ background:#fff; padding:10px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.06); }
+.day-header{ font-weight:600; margin-bottom:8px; }
+.slot-btn{ margin:6px 6px 6px 0; padding:6px 8px; border-radius:6px; border:1px solid #eee; cursor:pointer; }
+.slot-btn.available{ background:#e6ffef; border-color:#c6f1d2; }
+.slot-btn.taken{ background:#f3f3f3; color:#999; cursor:not-allowed; }
+.modal-backdrop{ position:fixed; inset:0; background:rgba(0,0,0,0.35); display:flex; align-items:center; justify-content:center; }
+.modal{ background:#fff; padding:16px; border-radius:8px; width:90%; max-width:420px; }
+input{ width:100%; padding:8px; margin:6px 0 12px 0; border-radius:6px; border:1px solid #ddd; }
+.works-grid{ display:flex; gap:12px; overflow-x:auto; padding:12px 0; }
+.work-card{ background-image: url('../public/images/fondo5.jpeg'); padding:10px; border-radius:8px; min-width:200px; flex:1 1 200px; box-sizing:border-box; }
+
+.footer{ margin-top:20px; text-align:center; color:#666; }
+.mensaje{ background:#e6ffef; padding:10px; border-radius:6px; margin-top:12px; }
+/* Admin styles */
+.admin-box{ margin-top:20px; padding:12px; background:#fff; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.04); }
+.admin-login { display:flex; gap:8px; align-items:center; }
+.calendar-precios-container {display: flex; flex-direction: column;gap: 50px;align-items: center;flex-wrap: wrap; padding: 15px;}
+.titulo-trabajos{
+  display: flex;
+  width: 280px;
+  padding: 6px 12px;
+  color: #ddc8f5;
+  font-family: "Rubik Gemstones", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #0a0909;
+  font-size: 25px;
+  text-decoration: underline;
+  border-radius: 16px;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+.precios-title{
+  font-family: "Rubik Gemstones", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #ff6fb5 ;
+  text-align: center;
+  font-size: 25px; display: flex; justify-content: center;text-decoration:underline; border-radius: 16px; margin: 0 0 20px 0; box-sizing: border-box; width: 100%; 
+}
+.calendar-col {flex: 1;max-width: 550px;min-width: 320px;}
+.precios-col{flex: 4;background-color: #ddc8f5;border-radius: 20px;width: 100%;; border-left: 3px solid #ff6fb5; border-right: 3px solid #ff6fb5;}
+.precios-section{display: flex; align-items: center; flex-direction: column; width: 100%; margin: auto; padding: 20px 0; box-sizing: border-box;}
+.socials{margin-top: 10px;}
+.react-calendar{border-radius: 12px;box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 100%;}
+@media (max-width: 900px) {
+  .calendar-precios-container {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .calendar-col{
+    width: 100%;
+  }
+   .precios-col {
+    min-width: 0;
+    width: 97%;
+    max-width: 97%;
+    box-sizing: border-box;
+  }
+  .precios-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .works-grid {
+    flex-direction: column;
+    gap: 16px;
+    overflow-x: visible;
+  }
+  .work-card {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .work-card img {
+  width: 87%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+  .calendar-precios-container{
+    gap: 20px;
+  }
+  .precios-col, .calendar-col {
+    padding: 10px 4px;
+    box-sizing: border-box;
+  }
+  .precios-section {
+    width: 95%;
+    padding: 0 8px;
+  }
+}
+.precios-title{  display: flex;
+  width: 280px;
+  padding: 6px 12px;
+  color: #ddc8f5;
+  font-family: "Rubik Gemstones", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #0a0909;
+  font-size: 25px;
+  text-decoration: underline;
+  border-radius: 16px;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+.titulo-trabajos{
+  display: flex;
+  width: 290px;
+  padding: 6px 12px;
+  color: #ddc8f5;
+  font-family: "Rubik Gemstones", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #0a0909;
+  font-size: 25px;
+  text-decoration: underline;
+  border-radius: 16px;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+.acordion-titulo{width: 100%;}
+.acordeon-titulo {
+  width: 100%;               /* que ocupe todo el ancho */
+  background: transparent;   /* fondo transparente */
+  border: 1px solid #fff;           
+  text-align: center;        /* texto centrado */
+  font-size: 18px;           /* más grande */
+  padding: 12px;             /* espacio interno */
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;             
+  justify-content: center;   /* centrado horizontal */
+  align-items: center;       /* centrado vertical */
+  gap: 8px;                  /* espacio entre texto y flecha */
+}
+
+.acordeon-titulo:hover {
+  background: rgba(0,0,0,0.05); /* leve sombreado al pasar el mouse */
+  border-radius: 6px;
+}
+
+.acordeon-contenido{
+  padding: 12px;             /* espacio interno */
+  border-top: 1px solid #eee; /* línea superior */
+  text-align: center;           /* texto alineado a la izquierda */
+  background-color: #c2cdf1;
+}
+
+
+.modal input{
+  width: 92%;
+}
+
