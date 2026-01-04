@@ -4,7 +4,7 @@ const trabajos = [
   { id: 1, nombre: "Semipermanente", descripcion: "Uñas con gel y diseño minimalista.", imagen: "/images/semipermanente.jpg" },
   { id: 2, nombre: "Softgel", descripcion: "Duración 3 semanas.", imagen: "/images/softgel.jpg" },
   { id: 3, nombre: "Nail Art Creativo", descripcion: "Diseños personalizados y únicos.", imagen: "/images/creativo.jpg" },
-  { id: 4, nombre: "Kapping ", descripcion: "Relajación y cuidado para tus pies.", imagen: "/images/kapping2.jpeg" },
+  { id: 4, nombre: "Kapping ", descripcion: "Refuerzo y cuidado con capa protectora a uñas naturales.", imagen: "/images/kapping2.jpeg" },
 ];
 
 export default function WorksSection() {
