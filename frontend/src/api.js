@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:5000';
+const BASE = 'https://nails-service-2.onrender.com';
 
 export async function fetchAvailability(start, days=14){
   const url = new URL(`${BASE}/availability`);
