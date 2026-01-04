@@ -42,8 +42,14 @@ const SERVICIOS = [
   },
   {
     titulo: "Retiro de profesional",
-    precio: "$7000",
-    descripcion: "Retiro seguro y sin dañar la uña natural."
+    precio: "",
+    descripcion: ("Retiro seguro y sin dañar la uña natural.",
+      <ul style={{margin:0, paddingLeft:18}}>
+        <li>Semipermaenente: <b>$5000</b></li>
+        <li>Cappping gel: <b>$8000</b></li>
+        <li>Soft gel: <b>$10000</b></li>
+      </ul>
+    )
   }
 ];
 
